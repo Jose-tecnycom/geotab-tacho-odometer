@@ -1,0 +1,15 @@
+{
+  "name": "Reporte Anual Gasóleo Profesional",
+  "description": "Cálculo de KM anuales basados en datos de tacógrafo (TGD)",
+  "icon": "https://github.com/Jose-tecnycom/geotab-tacho-odometer.git",
+  "items": [
+    {
+      "url": "index.html",
+      "path": "ActivityLink/",
+      "menuName": {
+        "en": "Annual Odometer Report",
+        "es": "Reporte KM Gasóleo"
+      }
+    }
+  ]
+}

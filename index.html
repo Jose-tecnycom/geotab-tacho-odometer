@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Reporte KM Anual</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="addin-container">
+        <h1>Kilómetros Anuales (Datos Tacógrafo)</h1>
+        
+        <div class="controls">
+            <label for="yearSelect">Año:</label>
+            <select id="yearSelect">
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+            <button id="btnConsultar">Consultar Datos</button>
+            <button id="btnExportar" style="display:none;">Descargar Excel/CSV</button>
+        </div>
+
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Vehículo</th>
+                    <th>Matrícula</th>
+                    <th>Odo. Inicial (km)</th>
+                    <th>Odo. Final (km)</th>
+                    <th>Total Recorrido (km)</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
