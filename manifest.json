@@ -1,17 +1,17 @@
 {
-    "name": "Reporte KM Gasoleo",
-    "supportEmail": "soporte@tecnoflotas.com",
-    "version": "1.0.0",
-    "items": [
-        {
-            "url": "https://github.com/Jose-tecnycom/geotab-tacho-odometer/index.html",
-            "path": "ActivityLink/",
-            "menuName": {
-                "en": "Tacho Odometer Report",
-                "es": "Reporte KM Gasóleo"
-            },
-            "icon": ""
-        }
-    ],
-    "isSignatureRequired": false
+  "name": "Reporte KM Gasoleo",
+  "supportEmail": "soporte@tecnoflotas.com",
+  "version": "1.0.0",
+  "items": [
+    {
+      "url": "https://jose-tecnycom.github.io/geotab-tacho-odometer/index.html",
+      "path": "ActivityLink/",
+      "menuName": {
+        "en": "Tacho Odometer Report",
+        "es": "Reporte KM Gasóleo"
+      },
+      "icon": ""
+    }
+  ],
+  "isSignatureRequired": false
 }
