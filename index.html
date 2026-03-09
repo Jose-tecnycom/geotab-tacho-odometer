@@ -3,20 +3,32 @@
 <head>
     <meta charset="utf-8" />
     <title>Reporte KM Anual</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; color: #333; }
+        .controls { margin-bottom: 20px; background: #f4f4f4; padding: 15px; border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #243665; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        button { padding: 10px 20px; cursor: pointer; background: #243665; color: white; border: none; border-radius: 4px; }
+        button:disabled { background: #ccc; }
+        #btnExportar { background: #28a745; margin-left: 10px; }
+    </style>
 </head>
 <body>
-    <div id="addin-container">
-        <h1>Kilómetros Anuales (Datos Tacógrafo)</h1>
+    <div id="addin-reporte">
+        <h1>Kilómetros Anuales (Tacógrafo)</h1>
+        <p>Este reporte calcula la diferencia de odómetro entre el 1 de enero y el 31 de diciembre del año seleccionado.</p>
         
         <div class="controls">
-            <label for="yearSelect">Año:</label>
+            <label>Seleccionar Año: </label>
             <select id="yearSelect">
+                <option value="2023">2023</option>
                 <option value="2024">2024</option>
                 <option value="2025">2025</option>
             </select>
             <button id="btnConsultar">Consultar Datos</button>
-            <button id="btnExportar" style="display:none;">Descargar Excel/CSV</button>
+            <button id="btnExportar" style="display:none;">Descargar CSV para Excel</button>
         </div>
 
         <table id="resultTable">
@@ -26,11 +38,10 @@
                     <th>Matrícula</th>
                     <th>Odo. Inicial (km)</th>
                     <th>Odo. Final (km)</th>
-                    <th>Total Recorrido (km)</th>
+                    <th>Total Año (km)</th>
                 </tr>
             </thead>
-            <tbody>
-                </tbody>
+            <tbody></tbody>
         </table>
     </div>
 
